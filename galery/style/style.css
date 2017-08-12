@@ -27,6 +27,8 @@ ul li {
   position: relative;
   min-height: 100%;
   overflow: hidden;
+  display: block;
+  margin-bottom: 20px;
 }
 
 .header {
@@ -140,6 +142,7 @@ ul li {
 }
 
 /*content*/
+
 .slider {
   margin-top: 12px;
 
@@ -177,59 +180,97 @@ ul li {
   margin-right: 8px;
 }
 
+/*products*/
+
+
 .products {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+	list-style: none;
+	margin: 20px 0 0 0;
+	padding: 0;
+  max-width: 940px;
 }
 
-.productPic {
-  height: 320px;
+.productWrapper {
+	display: block;
+	float: left;
   width: 220px;
-  max-width:220px;
-  max-height: 320px;
-  vertical-align:bottom;
+  max-width: 220px;
+  margin-right: 20px;
 }
 
-.productName {
-  font-size: 16px;
-  margin: 44px 0 0;
-  margin-bottom: 44px;
-}
-
-
-.products {
-  margin-top: 20px;
-  width: 940px;
-  padding: 0 0 0 0;
-  list-style: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: center;
+.productWrapper:nth-child(4n+4) {
+  margin-right: 0;
 }
 
 .product {
-  -webkit-flex: 0 0 auto;
-  flex: 0 0 auto;
-
-  margin-bottom: 0px;
-  padding: 0px;
-  text-align: center;
+	display: block;
+	position: relative;
+	margin: 0 20px 0 0;
+	text-decoration: none;
+  max-width: 220px;
 }
 
-.child {
-  margin-right: 20px;
+/* PRODUCT IMAGE */
+
+
+.productPhoto .productPic {
+	width: 220px;
+	height: 320px;
+  max-width: 220px;
+  max-height: 320px;
+}
+
+/* NAME AND DESCRIPTION */
+
+
+.productName {
+  margin: 0;
+  padding: 0;
+  width: 220px;
+  height: 80px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 80px;
+}
+
+.product .productPrice {
+	position: relative;
+	margin: 0;
+	overflow: hidden;
+}
+
+/* PRODUCT LAYOUT */
+
+@media only screen and (min-width: 450px) {
+	.productWrapper {
+		width: 50%;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.productWrapper {
+		width: 33.333%;
+	}
+	 .productMain {
+		width: 70%;
+	}
+
+	 .productPhoto {
+		width: 30%;
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+	.productWrapper {
+		width: 25%;
+	}
 }
 
 /*footer*/
 .footer {
   width: 940px;
   height: 360px;
-  margin-top: -360px;
+  margin-top: 20px;
   position: relative;
 }
 

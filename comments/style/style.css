@@ -27,6 +27,8 @@ ul li {
   position: relative;
   min-height: 100%;
   overflow: hidden;
+  display: block;
+  margin-bottom: 20px;
 }
 
 .header {
@@ -140,6 +142,7 @@ ul li {
 }
 
 /*content*/
+
 .slider {
   margin-top: 12px;
 
@@ -183,7 +186,7 @@ ul li {
 .footer {
   width: 940px;
   height: 360px;
-  margin-top: -360px;
+  margin-top: 20px;
   position: relative;
 }
 
